@@ -1,0 +1,11 @@
+
+
+-Keywords agregado a todas las secciones.
+
+-Description agregado a todas las secciones.
+
+-Titulos agregados a todas las secciones.
+
+-Se cambio la ruta de las secciones para mejorar el orden.
+
+-Se agrego encabezados a todas las secciones.
