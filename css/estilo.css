@@ -99,7 +99,7 @@ a:hover {
 .menu__item--normal a {
 
 	text-shadow: 5px 0 5px rgb(18, 19, 26);
-	padding: 7px 13px;
+	
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #ffffff;
@@ -109,7 +109,7 @@ a:hover {
 .menu__item--normal a:hover {
 
 	background-color: rgba(29, 221, 235, 0.432);
-	border-radius: 10px;
+	border-radius: 4px;
 
 }
 
@@ -590,11 +590,18 @@ h2 {
 }
 
 .formulario {
-	margin-left: 550px;
+	
 	margin-top: 50px;
 	width: 40%;
-	background-color: rgb(255, 255, 255);
+	background-color: white;
 
+}
+.formulario-1{
+	
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	
 }
 
 .formulario__title {
@@ -952,16 +959,15 @@ p {
 
 	.menu__item {
 		display: flex;
-		justify-content: space-evenly;
+
 		margin: 0;
 		padding: 0;
-		width: 40px;
-
+		width: 300px;
+	margin-left: 8px;
+	
 
 
 	}
-
-
 
 
 
@@ -971,7 +977,7 @@ p {
 	text-shadow: 5px 0 5px rgb(18, 19, 26);
 	width: 100%;
 	text-decoration: none;
-	font-size: 10px;
+	font-size: 11px;
 	font-weight: 900;
 
 	text-transform: uppercase;
@@ -998,7 +1004,7 @@ p {
 
 	margin: 0;
 	margin-top: 100px;
-	width: vw;
+	width: 100vw;
 	border-radius: 2%;
 }
 
@@ -1015,7 +1021,11 @@ p {
 .menu__logo {
 	padding: 0;
 	margin: 0;
+
+
 }
+
+	
 
 ul {
 	list-style-type: none;
