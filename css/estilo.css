@@ -3,20 +3,31 @@
 	padding: 0;
 
 }
-.carousel-item{
+
+.bar-btn{
+	display: none;
+}
+#check {
+	display: none;
+}
+
+.carousel-item {
 	width: 500px;
 	height: 400px;
 }
+
 .grid__carousel {
 	width: 100%;
 	height: 50%;
-		display: grid;
-		grid-area: b;
-	}
-	.msi{
-		
-		height: 100%;
-	}
+	display: grid;
+	grid-area: b;
+}
+
+.msi {
+
+	height: 100%;
+}
+
 .redesSociales {
 	display: flex;
 	justify-content: center;
@@ -49,14 +60,14 @@ body {
 	border-bottom: 1px rgb(3, 3, 1);
 	box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
 	width: 100%;
-
+justify-content:space-around;
 }
 
 .menu__logo {
 	margin: 0;
 	margin-left: 20px;
 	display: flex;
-text-transform: uppercase;
+	text-transform: uppercase;
 
 }
 
@@ -76,14 +87,15 @@ a:hover {
 	color: white;
 
 }
-
+.container-menu{
+	width: 100%;
+}
 
 .menu__item {
 
 	width: 100%;
 	justify-content: center;
-
-	display: inherit;
+display: flex;
 	margin: 10px;
 	list-style: none;
 
@@ -99,7 +111,7 @@ a:hover {
 .menu__item--normal a {
 
 	text-shadow: 5px 0 5px rgb(18, 19, 26);
-	
+
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #ffffff;
@@ -113,72 +125,6 @@ a:hover {
 
 }
 
-
-/* BOTON  */
-
-.menu__btnMenu {
-	display: none;
-	margin: auto;
-	margin-top: 12px;
-
-
-}
-
-span {
-	margin: auto;
-
-}
-
-span .button {
-	position: absolute;
-
-}
-
-#toggle {
-	display: none;
-}
-
-.button {
-
-	width: 43px;
-	height: 43px;
-	background-color: #004cf1a6;
-	border-radius: 100%;
-	transition: all 0.5 ease-in-out;
-	box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.3);
-	cursor: pointer;
-}
-
-.button:hover {
-	background-color: rgb(0, 0, 0, 3);
-
-
-}
-
-/* giro del boton */
-.button:before {
-	position: absolute;
-	top: 20px;
-	left: 9px;
-	content: "";
-	width: 25px;
-	height: 2px;
-	background-color: #fff;
-	transform: rotate(90deg);
-
-}
-
-.button::after {
-	position: absolute;
-	top: 20px;
-	left: 9px;
-	content: "";
-	width: 25px;
-	height: 2px;
-	background-color: #fff;
-
-
-}
 
 /* contenedor de links boton */
 
@@ -245,7 +191,9 @@ span .button {
 
 /* INDEX */
 
-
+.banners-responsive{
+	display: none;
+}
 .banners__bannertop1 {
 
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
@@ -590,18 +538,19 @@ h2 {
 }
 
 .formulario {
-	
+
 	margin-top: 50px;
 	width: 40%;
 	background-color: white;
 
 }
-.formulario-1{
-	
+
+.formulario-1 {
+
 	width: 100vw;
 	display: flex;
 	justify-content: center;
-	
+
 }
 
 .formulario__title {
@@ -681,7 +630,7 @@ p {
 	}
 
 	.grid {
-		display: grid;
+		display: none;
 
 		margin: 0;
 		margin-top: 100px;
@@ -855,7 +804,7 @@ p {
 	}
 
 	.grid {
-		display: none;
+		display: block;
 
 		margin: 0;
 		margin-top: 100px;
@@ -868,19 +817,19 @@ p {
 
 	.grid__grid1 {
 		margin-top: 10px;
-		display: grid;
+		display: none;
 		grid-area: 1;
 	}
 
 	.grid__grid2 {
 		margin-top: 10px;
-		display: grid;
+		display:none;
 		grid-area: 2;
 	}
 
 	.grid__grid3 {
 		margin-top: 10px;
-		display: grid;
+		display: none;
 		grid-area: 3;
 	}
 
@@ -889,9 +838,21 @@ p {
 		display: none;
 
 	}
+.msi{
+	width: 100%;
+	height: 300px;
+}
+.carousel-inner{
+width: 100vw;
+height: 100vh;
+}
 
+.grid{
+	margin: 0;
+}
 	.grid__carousel {
-		display: none;
+		display: flex;
+	
 	}
 
 	/* intercambio  */
@@ -917,33 +878,47 @@ p {
 	}
 
 	/* fin intercambio */
-	.menu {
-		height: 100px;
-		display: flex;
-		justify-content: space-around;
 
-		flex-direction: column;
-
-
-		margin: 0;
-
-	}
 
 	.boton-responsive {
 		margin-top: 10px;
 	}
 
-
+	.banners{
+		display: none;
+	}
+	.banners-responsive{
+		display: block;
+	}
 
 	.banners__bannertop1 {
-		display: none;
+
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+		margin-top: 10px;
+		height: 100px;
+		width: 100%;
+		transition: all 0.25s;
+		display: block;
 	}
 
-	.bannertop2 {
-		display: none;
+	.banners__bannertop2 {
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+		margin-top: 10px;
+		height: 100px;
+		width: 100%;
+		transition: all 0.25s;
+		display: block;
 	}
 
-
+	.banners__bannertop1:hover {
+		transform: translatey(0px);
+		box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+	}
+	
+	.banners__bannertop2:hover {
+		transform: translatex(0px);
+		box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+	}
 
 	.item-registro {
 		display: none;
@@ -957,79 +932,115 @@ p {
 
 	}
 
-	.menu__item {
-		display: flex;
-
-		margin: 0;
-		padding: 0;
-		width: 300px;
-	margin-left: 8px;
+	.container-menu {
+		background-color: #000000;
+	position: absolute;
+	width: 100%;
+		height: 0%;
+	margin-top:270px;
 	
 
+	}
+	.bar-btn{
+		
+		display: flex;
+		
+	}
+	.menu__item {
+		display: none;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		
+		padding: 10px;
+		
+	}
+
+
+
+	.menu__item--normal a {
+
+		margin: 0;
+		text-shadow: 5px 0 5px rgb(18, 23, 26);
+		width: 100%;
+		text-decoration: none;
+		font-size: 11px;
+		font-weight: 900;
+		text-transform: uppercase;
+		color: #ffffff;
+
+
+	}
+
+	#check:checked~.container-menu {
+		height: 200px;
+
+	}
+	#check:checked~.bar-btn{
+	
+		background-color: rgba(8, 4, 71, 0.315);
+	}
+	#check:checked~.container-menu .menu__item {
+		display: flex;
+	}
+
+	/* MENU HAMBURGUESA */
+
+
+	.bar-btn {
+		font-size: 25px;
+		color: white;
+		cursor: pointer;
+	}
+
+
+
+	/* formulario intercambio responsive */
+	.formularioContacto__contenedor {
+		width: 100%;
+	}
+
+	.formularioContacto {
+		margin: 0;
+		padding: 0;
+		width: 100vw;
+		background-color: rgb(255, 251, 251);
+		margin-bottom: 60px;
+
+	}
+
+	/* formulario registro responsive */
+
+	.formulario {
+
+		margin: 0;
+		margin-top: 100px;
+		width: 100vw;
+		border-radius: 2%;
+	}
+
+
+
+	#carouselExampleFade {
+		display: none;
 
 	}
 
 
 
 
-.menu__item--normal a {
-	margin: 0;
-	text-shadow: 5px 0 5px rgb(18, 19, 26);
-	width: 100%;
-	text-decoration: none;
-	font-size: 11px;
-	font-weight: 900;
+	.menu__logo {
+		padding: 0;
+		margin: 0;
 
-	text-transform: uppercase;
-	color: #ffffff;
 
-}
-
-/* formulario intercambio responsive */
-.formularioContacto__contenedor{
-	width: 100%;
-}
-.formularioContacto {
-	margin: 0;
-	padding: 0;
-	width: 100vw;
-	background-color: rgb(255, 251, 251);
-	margin-bottom: 60px;
-
-}
-
-/* formulario registro responsive */
-
-.formulario {
-
-	margin: 0;
-	margin-top: 100px;
-	width: 100vw;
-	border-radius: 2%;
-}
+	}
 
 
 
-#carouselExampleFade {
-	display: none;
-
-}
-
-
-
-
-.menu__logo {
-	padding: 0;
-	margin: 0;
-
-
-}
-
-	
-
-ul {
-	list-style-type: none;
-}
+	ul {
+		list-style-type: none;
+	}
 }
 
 /* FIN RESPONSIVE */
