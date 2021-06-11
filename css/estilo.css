@@ -629,33 +629,39 @@ p {
 		display: none;
 	}
 
-	.grid {
-		display: none;
-
-		margin: 0;
-		margin-top: 100px;
-
-		grid-template-columns: none;
-		grid-template-rows: 33% 33% 33%;
-		grid-template-areas: "1""2""3";
-		justify-content: center;
+	.msi{
+		width: 150%;
+		height: 350px;
 	}
+	.carousel-inner{
+	width: 100vw;
+	height: 350px;
+	}
+	
+	.grid{
+		display: block;
+		margin: 0;
+	}
+		.grid__carousel {
+			display: flex;
+		
+		}
 
 	.grid__grid1 {
 		margin-top: 10px;
-		display: grid;
+		display: none;
 		grid-area: 1;
 	}
 
 	.grid__grid2 {
 		margin-top: 10px;
-		display: grid;
+		display: none;
 		grid-area: 2;
 	}
 
 	.grid__grid3 {
 		margin-top: 10px;
-		display: grid;
+		display: none;
 		grid-area: 3;
 	}
 
@@ -665,9 +671,6 @@ p {
 
 	}
 
-	.grid__carousel {
-		display: none;
-	}
 
 	.redesSociales {
 		display: none;
@@ -717,12 +720,40 @@ p {
 
 
 
-	.banners__bannertop1 {
+	.banners{
 		display: none;
+	}
+	.banners-responsive{
+		display: block;
+	}
+
+	.banners__bannertop1 {
+
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+		margin-top: 10px;
+		height: 150px;
+		width: 100%;
+		transition: all 0.25s;
+		display: block;
 	}
 
 	.banners__bannertop2 {
-		display: none;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+		margin-top: 10px;
+		height: 150px;
+		width: 100%;
+		transition: all 0.25s;
+		display: block;
+	}
+
+	.banners__bannertop1:hover {
+		transform: translatey(0px);
+		box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+	}
+	
+	.banners__bannertop2:hover {
+		transform: translatex(0px);
+		box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 	}
 
 
@@ -730,26 +761,66 @@ p {
 	.item-registro {
 		display: none;
 	}
+	.container-menu {
+		z-index: 1;
+		background-color: #000000;
+	position: absolute;
+	width: 100%;
+		height: 0%;
+	margin-top:270px;
+	
 
-	.menu__item--normal {
-		align-items: center;
+	}
+	.bar-btn{
+		
+		display: flex;
+		
+	}
+	.menu__item {
+		display: none;
+		flex-direction: column;
 		margin: 0;
-		padding: 5px;
-		margin-left: 5;
+		padding: 0;
+		
+		padding: 10px;
+		
+	}
+
+
+
+	.menu__item--normal a {
+
+		margin: 0;
+		text-shadow: 5px 0 5px rgb(18, 23, 26);
+		width: 100%;
+		text-decoration: none;
+		font-size: 11px;
+		font-weight: 900;
+		text-transform: uppercase;
+		color: #ffffff;
 
 
 	}
 
-	.menu__item--normal a {
-		margin: 0;
-		text-shadow: 5px 0 5px rgb(18, 19, 26);
-		width: 100%;
-		text-decoration: none;
-		font-size: 10px;
+	#check:checked~.container-menu {
+		height: 200px;
 
-		text-transform: uppercase;
-		color: #ffffff;
+	}
+	#check:checked~.bar-btn{
+	
+		background-color: rgba(8, 4, 71, 0.315);
+	}
+	#check:checked~.container-menu .menu__item {
+		display: flex;
+	}
 
+	/* MENU HAMBURGUESA */
+
+
+	.bar-btn {
+		font-size: 25px;
+		color: white;
+		cursor: pointer;
 	}
 
 	/* formulario intercambio responsive */
@@ -844,7 +915,7 @@ p {
 }
 .carousel-inner{
 width: 100vw;
-height: 100vh;
+height: 300px;
 }
 
 .grid{
@@ -933,6 +1004,7 @@ height: 100vh;
 	}
 
 	.container-menu {
+		z-index: 1;
 		background-color: #000000;
 	position: absolute;
 	width: 100%;
