@@ -1,6 +1,12 @@
 $colorPrincipal:rgb(2, 2, 12);
 $tamBanner:700px;
+body {
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+background-color: $colorPrincipal;
 
+}
 @mixin mixinsass($mayus,$colorLetra ) {
 	text-transform: $mayus;
 	color: $colorLetra;
@@ -18,8 +24,32 @@ $tamBanner:700px;
 	}
 	}
 }
+.banners__bannertop1 {
+	width: $tamBanner;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+	margin-top: 40px;
+	height: 200px;
+	transition: all 0.25s;
+}
 
+.banners__bannertop2 {
+	width: $tamBanner;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+	margin-top: 40px;
+	height: 200px;
 
+	transition: all 0.25s;
+}
+
+.banners__bannertop1:hover {
+	transform: translatex(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.banners__bannertop2:hover {
+	transform: translatex(+15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
 
 * {
 	margin: 0;
@@ -51,13 +81,7 @@ h1 {
 
 }
 
-body {
-	width: 100vw;
-	height: 100vh;
-	text-align: center;
 
-
-}
 
 /*  MENU */
 
@@ -269,32 +293,7 @@ span .button {
 /* INDEX */
 
 
-.banners__bannertop1 {
 
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
-	margin-top: 40px;
-	height: 200px;
-	width: 40%;
-	transition: all 0.25s;
-}
-
-.banners__bannertop2 {
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
-	margin-top: 40px;
-	height: 200px;
-	width: 40%;
-	transition: all 0.25s;
-}
-
-.banners__bannertop1:hover {
-	transform: translatex(-15px);
-	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.banners__bannertop2:hover {
-	transform: translatex(+15px);
-	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
 
 .grid {
 	margin-top: 40px;

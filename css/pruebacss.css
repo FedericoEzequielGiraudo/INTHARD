@@ -1,3 +1,9 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: #02020c; }
+
 .sass {
   background-color: #1a2629; }
   .sass ul {
@@ -6,6 +12,28 @@
       text-transform: uppercase;
       color: white;
       text-decoration: none; }
+
+.banners__bannertop1 {
+  width: 700px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  margin-top: 40px;
+  height: 200px;
+  transition: all 0.25s; }
+
+.banners__bannertop2 {
+  width: 700px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  margin-top: 40px;
+  height: 200px;
+  transition: all 0.25s; }
+
+.banners__bannertop1:hover {
+  transform: translatex(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.banners__bannertop2:hover {
+  transform: translatex(15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
 
 * {
   margin: 0;
@@ -31,11 +59,6 @@
 
 h1 {
   margin-top: 10px; }
-
-body {
-  width: 100vw;
-  height: 100vh;
-  text-align: center; }
 
 /*  MENU */
 .menu {
@@ -172,28 +195,6 @@ span .button {
 
 /* FIN BOTON */
 /* INDEX */
-.banners__bannertop1 {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-  margin-top: 40px;
-  height: 200px;
-  width: 40%;
-  transition: all 0.25s; }
-
-.banners__bannertop2 {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-  margin-top: 40px;
-  height: 200px;
-  width: 40%;
-  transition: all 0.25s; }
-
-.banners__bannertop1:hover {
-  transform: translatex(-15px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
-
-.banners__bannertop2:hover {
-  transform: translatex(15px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
-
 .grid {
   margin-top: 40px;
   margin-left: 60px;
