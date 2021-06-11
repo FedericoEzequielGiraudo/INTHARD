@@ -1,29 +1,34 @@
 $colorPrincipal:rgb(2, 2, 12);
 $tamBanner:700px;
+
 body {
 	width: 100vw;
 	height: 100vh;
 	text-align: center;
-background-color: $colorPrincipal;
+	background-color: $colorPrincipal;
 
 }
-@mixin mixinsass($mayus,$colorLetra ) {
+
+@mixin mixinsass($mayus, $colorLetra) {
 	text-transform: $mayus;
 	color: $colorLetra;
- }
+}
 
-.sass{
-	
+.sass {
+
 	background-color: rgb(26, 38, 41);
-	ul{
+
+	ul {
 		list-style-type: none;
-	a{
-	@include mixinsass(uppercase,rgb(255, 255, 255) );
-		text-decoration: none;
-		
-	}
+
+		a {
+			@include mixinsass(uppercase, rgb(255, 255, 255));
+			text-decoration: none;
+
+		}
 	}
 }
+
 .banners__bannertop1 {
 	width: $tamBanner;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
@@ -56,20 +61,32 @@ background-color: $colorPrincipal;
 	padding: 0;
 
 }
-.carousel-item{
+
+.bar-btn {
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+.carousel-item {
 	width: 500px;
 	height: 400px;
 }
+
 .grid__carousel {
 	width: 100%;
 	height: 50%;
-		display: grid;
-		grid-area: b;
-	}
-	.msi{
-		
-		height: 100%;
-	}
+	display: grid;
+	grid-area: b;
+}
+
+.msi {
+
+	height: 100%;
+}
+
 .redesSociales {
 	display: flex;
 	justify-content: center;
@@ -81,7 +98,13 @@ h1 {
 
 }
 
+body {
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
 
+
+}
 
 /*  MENU */
 
@@ -96,14 +119,14 @@ h1 {
 	border-bottom: 1px rgb(3, 3, 1);
 	box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
 	width: 100%;
-
+	justify-content: space-around;
 }
 
 .menu__logo {
 	margin: 0;
 	margin-left: 20px;
 	display: flex;
-text-transform: uppercase;
+	text-transform: uppercase;
 
 }
 
@@ -124,13 +147,15 @@ a:hover {
 
 }
 
+.container-menu {
+	width: 100%;
+}
 
 .menu__item {
 
 	width: 100%;
 	justify-content: center;
-
-	display: inherit;
+	display: flex;
 	margin: 10px;
 	list-style: none;
 
@@ -146,7 +171,7 @@ a:hover {
 .menu__item--normal a {
 
 	text-shadow: 5px 0 5px rgb(18, 19, 26);
-	
+
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #ffffff;
@@ -160,72 +185,6 @@ a:hover {
 
 }
 
-
-/* BOTON  */
-
-.menu__btnMenu {
-	display: none;
-	margin: auto;
-	margin-top: 12px;
-
-
-}
-
-span {
-	margin: auto;
-
-}
-
-span .button {
-	position: absolute;
-
-}
-
-#toggle {
-	display: none;
-}
-
-.button {
-
-	width: 43px;
-	height: 43px;
-	background-color: #004cf1a6;
-	border-radius: 100%;
-	transition: all 0.5 ease-in-out;
-	box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.3);
-	cursor: pointer;
-}
-
-.button:hover {
-	background-color: (0, 0, 0, 3);
-
-
-}
-
-/* giro del boton */
-.button:before {
-	position: absolute;
-	top: 20px;
-	left: 9px;
-	content: "";
-	width: 25px;
-	height: 2px;
-	background-color: #fff;
-	transform: rotate(90deg);
-
-}
-
-.button::after {
-	position: absolute;
-	top: 20px;
-	left: 9px;
-	content: "";
-	width: 25px;
-	height: 2px;
-	background-color: #fff;
-
-
-}
 
 /* contenedor de links boton */
 
@@ -292,8 +251,36 @@ span .button {
 
 /* INDEX */
 
+.banners-responsive {
+	display: none;
+}
 
+.banners__bannertop1 {
 
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+	margin-top: 40px;
+	height: 200px;
+	width: 40%;
+	transition: all 0.25s;
+}
+
+.banners__bannertop2 {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+	margin-top: 40px;
+	height: 200px;
+	width: 40%;
+	transition: all 0.25s;
+}
+
+.banners__bannertop1:hover {
+	transform: translatex(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.banners__bannertop2:hover {
+	transform: translatex(+15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
 
 .grid {
 	margin-top: 40px;
@@ -612,18 +599,19 @@ h2 {
 }
 
 .formulario {
-	
+
 	margin-top: 50px;
 	width: 40%;
 	background-color: white;
 
 }
-.formulario-1{
-	
+
+.formulario-1 {
+
 	width: 100vw;
 	display: flex;
 	justify-content: center;
-	
+
 }
 
 .formulario__title {
@@ -702,33 +690,41 @@ p {
 		display: none;
 	}
 
+	.msi {
+		width: 150%;
+		height: 350px;
+	}
+
+	.carousel-inner {
+		width: 100vw;
+		height: 350px;
+	}
+
 	.grid {
-		display: grid;
-
+		display: block;
 		margin: 0;
-		margin-top: 100px;
+	}
 
-		grid-template-columns: none;
-		grid-template-rows: 33% 33% 33%;
-		grid-template-areas: "1""2""3";
-		justify-content: center;
+	.grid__carousel {
+		display: flex;
+
 	}
 
 	.grid__grid1 {
 		margin-top: 10px;
-		display: grid;
+		display: none;
 		grid-area: 1;
 	}
 
 	.grid__grid2 {
 		margin-top: 10px;
-		display: grid;
+		display: none;
 		grid-area: 2;
 	}
 
 	.grid__grid3 {
 		margin-top: 10px;
-		display: grid;
+		display: none;
 		grid-area: 3;
 	}
 
@@ -738,9 +734,6 @@ p {
 
 	}
 
-	.grid__carousel {
-		display: none;
-	}
 
 	.redesSociales {
 		display: none;
@@ -790,12 +783,41 @@ p {
 
 
 
-	.banners__bannertop1 {
+	.banners {
 		display: none;
 	}
 
+	.banners-responsive {
+		display: block;
+	}
+
+	.banners__bannertop1 {
+
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+		margin-top: 10px;
+		height: 150px;
+		width: 100%;
+		transition: all 0.25s;
+		display: block;
+	}
+
 	.banners__bannertop2 {
-		display: none;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+		margin-top: 10px;
+		height: 150px;
+		width: 100%;
+		transition: all 0.25s;
+		display: block;
+	}
+
+	.banners__bannertop1:hover {
+		transform: translatey(0px);
+		box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+	}
+
+	.banners__bannertop2:hover {
+		transform: translatex(0px);
+		box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 	}
 
 
@@ -804,25 +826,70 @@ p {
 		display: none;
 	}
 
-	.menu__item--normal {
-		align-items: center;
-		margin: 0;
-		padding: 5px;
-		margin-left: 5;
+	.container-menu {
+		z-index: 1;
+		background-color: #000000;
+		position: absolute;
+		width: 100%;
+		height: 0%;
+		margin-top: 270px;
 
 
 	}
 
-	.menu__item--normal a {
+	.bar-btn {
+
+		display: flex;
+
+	}
+
+	.menu__item {
+		display: none;
+		flex-direction: column;
 		margin: 0;
-		text-shadow: 5px 0 5px rgb(18, 19, 26);
+		padding: 0;
+
+		padding: 10px;
+
+	}
+
+
+
+	.menu__item--normal a {
+
+		margin: 0;
+		text-shadow: 5px 0 5px rgb(18, 23, 26);
 		width: 100%;
 		text-decoration: none;
-		font-size: 10px;
-
+		font-size: 11px;
+		font-weight: 900;
 		text-transform: uppercase;
 		color: #ffffff;
 
+
+	}
+
+	#check:checked~.container-menu {
+		height: 200px;
+
+	}
+
+	#check:checked~.bar-btn {
+
+		background-color: rgba(8, 4, 71, 0.315);
+	}
+
+	#check:checked~.container-menu .menu__item {
+		display: flex;
+	}
+
+	/* MENU HAMBURGUESA */
+
+
+	.bar-btn {
+		font-size: 25px;
+		color: white;
+		cursor: pointer;
 	}
 
 	/* formulario intercambio responsive */
@@ -877,7 +944,7 @@ p {
 	}
 
 	.grid {
-		display: none;
+		display: block;
 
 		margin: 0;
 		margin-top: 100px;
@@ -890,19 +957,19 @@ p {
 
 	.grid__grid1 {
 		margin-top: 10px;
-		display: grid;
+		display: none;
 		grid-area: 1;
 	}
 
 	.grid__grid2 {
 		margin-top: 10px;
-		display: grid;
+		display: none;
 		grid-area: 2;
 	}
 
 	.grid__grid3 {
 		margin-top: 10px;
-		display: grid;
+		display: none;
 		grid-area: 3;
 	}
 
@@ -912,8 +979,23 @@ p {
 
 	}
 
+	.msi {
+		width: 100%;
+		height: 300px;
+	}
+
+	.carousel-inner {
+		width: 100vw;
+		height: 300px;
+	}
+
+	.grid {
+		margin: 0;
+	}
+
 	.grid__carousel {
-		display: none;
+		display: flex;
+
 	}
 
 	/* intercambio  */
@@ -939,33 +1021,48 @@ p {
 	}
 
 	/* fin intercambio */
-	.menu {
-		height: 100px;
-		display: flex;
-		justify-content: space-around;
 
-		flex-direction: column;
-
-
-		margin: 0;
-
-	}
 
 	.boton-responsive {
 		margin-top: 10px;
 	}
 
+	.banners {
+		display: none;
+	}
 
+	.banners-responsive {
+		display: block;
+	}
 
 	.banners__bannertop1 {
-		display: none;
+
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+		margin-top: 10px;
+		height: 100px;
+		width: 100%;
+		transition: all 0.25s;
+		display: block;
 	}
 
-	.bannertop2 {
-		display: none;
+	.banners__bannertop2 {
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+		margin-top: 10px;
+		height: 100px;
+		width: 100%;
+		transition: all 0.25s;
+		display: block;
 	}
 
+	.banners__bannertop1:hover {
+		transform: translatey(0px);
+		box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+	}
 
+	.banners__bannertop2:hover {
+		transform: translatex(0px);
+		box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+	}
 
 	.item-registro {
 		display: none;
@@ -979,79 +1076,119 @@ p {
 
 	}
 
-	.menu__item {
+	.container-menu {
+		z-index: 1;
+		background-color: #000000;
+		position: absolute;
+		width: 100%;
+		height: 0%;
+		margin-top: 270px;
+
+
+	}
+
+	.bar-btn {
+
 		display: flex;
 
+	}
+
+	.menu__item {
+		display: none;
+		flex-direction: column;
 		margin: 0;
 		padding: 0;
-		width: 300px;
-	margin-left: 8px;
-	
 
+		padding: 10px;
+
+	}
+
+
+
+	.menu__item--normal a {
+
+		margin: 0;
+		text-shadow: 5px 0 5px rgb(18, 23, 26);
+		width: 100%;
+		text-decoration: none;
+		font-size: 11px;
+		font-weight: 900;
+		text-transform: uppercase;
+		color: #ffffff;
+
+
+	}
+
+	#check:checked~.container-menu {
+		height: 200px;
+
+	}
+
+	#check:checked~.bar-btn {
+
+		background-color: rgba(8, 4, 71, 0.315);
+	}
+
+	#check:checked~.container-menu .menu__item {
+		display: flex;
+	}
+
+	/* MENU HAMBURGUESA */
+
+
+	.bar-btn {
+		font-size: 25px;
+		color: white;
+		cursor: pointer;
+	}
+
+
+
+	/* formulario intercambio responsive */
+	.formularioContacto__contenedor {
+		width: 100%;
+	}
+
+	.formularioContacto {
+		margin: 0;
+		padding: 0;
+		width: 100vw;
+		background-color: rgb(255, 251, 251);
+		margin-bottom: 60px;
+
+	}
+
+	/* formulario registro responsive */
+
+	.formulario {
+
+		margin: 0;
+		margin-top: 100px;
+		width: 100vw;
+		border-radius: 2%;
+	}
+
+
+
+	#carouselExampleFade {
+		display: none;
 
 	}
 
 
 
 
-.menu__item--normal a {
-	margin: 0;
-	text-shadow: 5px 0 5px rgb(18, 19, 26);
-	width: 100%;
-	text-decoration: none;
-	font-size: 11px;
-	font-weight: 900;
+	.menu__logo {
+		padding: 0;
+		margin: 0;
 
-	text-transform: uppercase;
-	color: #ffffff;
 
+	}
+
+
+
+	ul {
+		list-style-type: none;
+	}
 }
-
-/* formulario intercambio responsive */
-.formularioContacto__contenedor{
-	width: 100%;
-}
-.formularioContacto {
-	margin: 0;
-	padding: 0;
-	width: 100vw;
-	background-color: rgb(255, 251, 251);
-	margin-bottom: 60px;
-
-}
-
-/* formulario registro responsive */
-
-.formulario {
-
-	margin: 0;
-	margin-top: 100px;
-	width: 100vw;
-	border-radius: 2%;
-}
-
-
-
-#carouselExampleFade {
-	display: none;
-
-}
-
-
-
-
-.menu__logo {
-	padding: 0;
-	margin: 0;
-
-
-}
-
-	
-
-ul {
-	list-style-type: none;
-}
-}
-
 /* FIN RESPONSIVE */
