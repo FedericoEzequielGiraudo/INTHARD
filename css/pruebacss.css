@@ -1,0 +1,670 @@
+.sass {
+  background-color: #1a2629; }
+  .sass ul {
+    list-style-type: none; }
+    .sass ul a {
+      text-transform: uppercase;
+      color: white;
+      text-decoration: none; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.carousel-item {
+  width: 500px;
+  height: 400px; }
+
+.grid__carousel {
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-area: b; }
+
+.msi {
+  height: 100%; }
+
+.redesSociales {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; }
+
+h1 {
+  margin-top: 10px; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  text-align: center; }
+
+/*  MENU */
+.menu {
+  background-color: #004cf1a6;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  align-items: center;
+  border-bottom: 1px #030301;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+  width: 100%; }
+
+.menu__logo {
+  margin: 0;
+  margin-left: 20px;
+  display: flex;
+  text-transform: uppercase; }
+
+.menu__logo__link {
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  text-shadow: 5px 0 5px #12131a;
+  cursor: pointer; }
+
+a:hover {
+  color: white; }
+
+.menu__item {
+  width: 100%;
+  justify-content: center;
+  display: inherit;
+  margin: 10px;
+  list-style: none; }
+
+.menu__item--normal {
+  border-radius: 1px;
+  /* margin-right: 70px; */ }
+
+.menu__item--normal a {
+  text-shadow: 5px 0 5px #12131a;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.menu__item--normal a:hover {
+  background-color: rgba(29, 221, 235, 0.432);
+  border-radius: 4px; }
+
+/* BOTON  */
+.menu__btnMenu {
+  display: none;
+  margin: auto;
+  margin-top: 12px; }
+
+span {
+  margin: auto; }
+
+span .button {
+  position: absolute; }
+
+#toggle {
+  display: none; }
+
+.button {
+  width: 43px;
+  height: 43px;
+  background-color: #004cf1a6;
+  border-radius: 100%;
+  transition: all 0.5 ease-in-out;
+  box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer; }
+
+.button:hover {
+  background-color: 0, 0, 0, 3; }
+
+/* giro del boton */
+.button:before {
+  position: absolute;
+  top: 20px;
+  left: 9px;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(90deg); }
+
+.button::after {
+  position: absolute;
+  top: 20px;
+  left: 9px;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #fff; }
+
+/* contenedor de links boton */
+.container {
+  position: fixed;
+  margin-top: 40px;
+  transition: all 0.7s ease-in-out;
+  background-color: #000000d0;
+  width: 300px;
+  border-radius: 5px;
+  transform: translatex(-350%);
+  box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, 0.3); }
+
+.container a {
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.container a:hover {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+#toggle:checked ~ .container {
+  transform: translatex(-105%); }
+
+#toggle:checked ~ .button {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(135deg); }
+
+.icono {
+  width: 30px; }
+
+/* FIN BOTON */
+/* INDEX */
+.banners__bannertop1 {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  margin-top: 40px;
+  height: 200px;
+  width: 40%;
+  transition: all 0.25s; }
+
+.banners__bannertop2 {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  margin-top: 40px;
+  height: 200px;
+  width: 40%;
+  transition: all 0.25s; }
+
+.banners__bannertop1:hover {
+  transform: translatex(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.banners__bannertop2:hover {
+  transform: translatex(15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.grid {
+  margin-top: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+  background-color: white;
+  display: grid;
+  justify-content: right;
+  width: auto;
+  height: auto;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "a b c" "d b f"; }
+
+.grid__grid1 {
+  display: grid;
+  grid-area: a; }
+
+.grid__grid2 {
+  display: grid;
+  grid-area: c; }
+
+.grid__grid3 {
+  display: grid;
+  grid-area: d; }
+
+.grid__grid4 {
+  display: grid;
+  grid-area: f; }
+
+.bannerbot {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  height: 200px;
+  width: 576px;
+  transition: all 0.25s; }
+
+.bannerbot12 {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  height: 400px;
+  width: 576px;
+  transition: all 0.25s; }
+
+.bannerbot1 {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  height: 200px;
+  width: 576.8px;
+  transition: all 0.25s; }
+
+.bannerbot2 {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  height: 200px;
+  width: 576.8px;
+  transition: all 0.25s; }
+
+.bannerbot:hover {
+  transform: translatey(15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.bannerbot1:hover {
+  transform: translatex(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.bannerbot2:hover {
+  transform: translatex(15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+/*FIN INDEX  */
+/* SECCION SERVICIOS */
+.containerCard {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  position: relative; }
+
+.containerCard .card {
+  background-color: #004cf1a6;
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-top: 40px;
+  margin-left: 50px;
+  text-align: center;
+  transition: all 0.25s; }
+
+.containerCard .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.containerCard .card img {
+  width: 330px;
+  height: 220px; }
+
+.containerCard .card h4 {
+  text-shadow: 5px 0 5px #12131a;
+  color: white;
+  font-weight: 600; }
+
+.containerCard .card p {
+  color: white;
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  text-shadow: 5px 0 5px #12131a; }
+
+.containerCard .card a {
+  color: white; }
+
+.containerCard .card a:hover {
+  color: #0a0606; }
+
+/* FIN SECCION SERVICIOS */
+/* SECCION CONTACTO */
+.bannerIntercambio {
+  width: 100%;
+  height: 200px; }
+
+h2 {
+  font-family: sans-serif; }
+
+.formularioContacto {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+
+.formularioContacto__contenedor {
+  width: 60%;
+  background-color: #004cf1a6;
+  border-bottom: 1px #030301;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  padding: 20px; }
+
+.detallar {
+  border-bottom: 1px solid;
+  color: white;
+  font-size: 20px;
+  text-shadow: 5px 0 5px #12131a; }
+
+.areaTexto {
+  border: transparent;
+  padding: 10px;
+  width: 100%;
+  font-size: 20px; }
+
+.formularioContacto__input {
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  margin-top: 10px;
+  width: 100%; }
+
+.botonContacto {
+  color: white;
+  text-shadow: 5px 0 5px #12131a;
+  background-color: #004cf1a6;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  margin-top: 10px;
+  width: 200px; }
+
+.botonContacto:hover {
+  background-color: #06173ba6; }
+
+#formularioIntercambio {
+  margin-top: 50px; }
+
+/* INTERCAMBIO SECCION */
+.intercambio1 {
+  letter-spacing: 1px;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center; }
+
+.intercambio2 {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.intercambio__card {
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+  width: 40vw;
+  height: 20vh;
+  border-bottom: 1px #030301;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  background-color: #004cf1a6; }
+
+.intercambio__card h2 {
+  border-bottom: 1px solid;
+  color: white;
+  font-size: 40px;
+  text-shadow: 5px 0 5px #12131a; }
+
+.intercambio__card p {
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-shadow: 5px 0 5px black; }
+
+.numero {
+  font-size: 120px; }
+
+.accesoRegistro {
+  margin-left: 5px;
+  color: white; }
+
+/* FIN SECCION INTERCAMBIO */
+/* SECCION REGISTRO */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffffa6;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center; }
+
+.formulario__estilo {
+  width: 100%;
+  padding: 15px; }
+
+.formulario {
+  margin-top: 50px;
+  width: 40%;
+  background-color: white; }
+
+.formulario-1 {
+  width: 100vw;
+  display: flex;
+  justify-content: center; }
+
+.formulario__title {
+  text-align: center;
+  font-size: 36px; }
+
+.formulario__input {
+  margin-bottom: 15px;
+  border: 1px solid #aaa; }
+
+input {
+  font-size: 20px;
+  width: 80%;
+  padding: 10px;
+  border: none; }
+
+.iconoR {
+  min-width: 50px;
+  text-align: center; }
+
+.botonRegistro {
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background-color: #004cf1a6;
+  padding: 15px 20px;
+  border-radius: 15px;
+  text-shadow: 5px 0 5px #12131a;
+  cursor: pointer; }
+
+.botonRegistro:hover {
+  background-color: #042f8da6; }
+
+p {
+  text-align: center; }
+
+/* FIN SECCION REGISTRO */
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0; }
+  .button {
+    display: none; }
+  .grid {
+    display: grid;
+    margin: 0;
+    margin-top: 100px;
+    grid-template-columns: none;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "1" "2" "3";
+    justify-content: center; }
+  .grid__grid1 {
+    margin-top: 10px;
+    display: grid;
+    grid-area: 1; }
+  .grid__grid2 {
+    margin-top: 10px;
+    display: grid;
+    grid-area: 2; }
+  .grid__grid3 {
+    margin-top: 10px;
+    display: grid;
+    grid-area: 3; }
+  .grid__grid4 {
+    display: none; }
+  .grid__carousel {
+    display: none; }
+  .redesSociales {
+    display: none; }
+  .containerCard .card {
+    margin-left: 0px;
+    z-index: -1; }
+  /* intercambio  */
+  .intercambio1 {
+    margin: 0;
+    display: flex;
+    flex-direction: column; }
+  .intercambio2 {
+    margin: 0;
+    display: flex;
+    flex-direction: column; }
+  .intercambio__card {
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 80%;
+    height: 100%; }
+  /* fin intercambio */
+  .menu {
+    display: flex;
+    z-index: 1; }
+  .boton-responsive {
+    margin-top: 10px; }
+  .banners__bannertop1 {
+    display: none; }
+  .banners__bannertop2 {
+    display: none; }
+  .item-registro {
+    display: none; }
+  .menu__item--normal {
+    align-items: center;
+    margin: 0;
+    padding: 5px;
+    margin-left: 5; }
+  .menu__item--normal a {
+    margin: 0;
+    text-shadow: 5px 0 5px #12131a;
+    width: 100%;
+    text-decoration: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #ffffff; }
+  /* formulario intercambio responsive */
+  .formularioContacto {
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 60px; }
+  /* formulario registro responsive */
+  .formulario {
+    margin: 0;
+    margin-top: 100px;
+    width: 100vw;
+    border-radius: 2%; }
+  #carouselExampleFade {
+    display: none; }
+  .menu__logo {
+    padding: 0;
+    margin: 0; }
+  .menu__logo__link {
+    padding: 10px;
+    font-size: 25px; }
+  ul {
+    list-style-type: none; } }
+
+@media screen and (max-width: 576px) {
+  body {
+    margin: 0; }
+  .grid {
+    display: none;
+    margin: 0;
+    margin-top: 100px;
+    grid-template-columns: none;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "1" "2" "3";
+    justify-content: center; }
+  .grid__grid1 {
+    margin-top: 10px;
+    display: grid;
+    grid-area: 1; }
+  .grid__grid2 {
+    margin-top: 10px;
+    display: grid;
+    grid-area: 2; }
+  .grid__grid3 {
+    margin-top: 10px;
+    display: grid;
+    grid-area: 3; }
+  .grid__grid4 {
+    display: none; }
+  .grid__carousel {
+    display: none; }
+  /* intercambio  */
+  .intercambio1 {
+    margin: 0;
+    display: flex;
+    flex-direction: column; }
+  .intercambio2 {
+    margin: 0;
+    display: flex;
+    flex-direction: column; }
+  .intercambio__card {
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 80%;
+    height: 100%; }
+  /* fin intercambio */
+  .menu {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0; }
+  .boton-responsive {
+    margin-top: 10px; }
+  .banners__bannertop1 {
+    display: none; }
+  .bannertop2 {
+    display: none; }
+  .item-registro {
+    display: none; }
+  .menu__item--normal {
+    margin: 0; }
+  .menu__item {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    margin-left: 8px; }
+  .menu__item--normal a {
+    margin: 0;
+    text-shadow: 5px 0 5px #12131a;
+    width: 100%;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff; }
+  /* formulario intercambio responsive */
+  .formularioContacto__contenedor {
+    width: 100%; }
+  .formularioContacto {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: #fffbfb;
+    margin-bottom: 60px; }
+  /* formulario registro responsive */
+  .formulario {
+    margin: 0;
+    margin-top: 100px;
+    width: 100vw;
+    border-radius: 2%; }
+  #carouselExampleFade {
+    display: none; }
+  .menu__logo {
+    padding: 0;
+    margin: 0; }
+  ul {
+    list-style-type: none; } }
+
+/* FIN RESPONSIVE */
